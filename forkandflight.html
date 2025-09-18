@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fork&Flight (FAF) — Taste the world, pay with crypto</title>
+  <meta name="description" content="Grab your fork, catch a flight, and pay with Fork&Flight (FAF) — the coin for restaurants, travel and tasty adventures." />
+  <meta name="theme-color" content="#e0d4c0" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <style>
+    /* Basic reset + beige/braun theme */
+    :root{
+      --bg: #f5f0e6;       /* helles Beige */
+      --card: #e0d4c0;     /* hellbraun für Karten */
+      --accent: #b97a57;   /* Akzentfarbe braun */
+      --muted: #7b6751;    /* gedämpfte Schriftfarbe */
+      --glass: rgba(255,255,255,0.3);
+    }    
+    *{box-sizing:border-box}
+    html,body{
+      height:100%;
+      margin:0;
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial;
+      color: var(--muted);
+      background: linear-gradient(180deg, var(--bg) 0%, var(--card) 60%);
+    }
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+
+    header{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{
+      width:48px;height:48px;
+      background:linear-gradient(135deg,#d6b58f,#b97a57);
+      border-radius:10px;
+      display:flex;align-items:center;justify-content:center;
+      font-weight:700;color:#fff
+    }
+    .brand h1{font-size:18px;margin:0}
+    .ticker{font-weight:700;color: var(--accent); font-size:13px}
+
+    nav{display:flex;gap:14px;align-items:center}
+    .btn{background:var(--accent);color:#fff;padding:10px 16px;border-radius:10px;font-weight:700}
+    .ghost{background:transparent;border:1px solid rgba(123,103,81,0.2);padding:8px 12px;border-radius:10px;color:var(--muted)}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:center;padding:40px 0}
+    .hero h2{font-size:36px;margin:0 0 12px;line-height:1.02}
+    .hero p{margin:0 0 18px;color:var(--muted)}
+    .card{
+      background:var(--card);
+      padding:18px;
+      border-radius:14px;
+      box-shadow:0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    .stats{display:flex;gap:12px;margin-top:8px}
+    .stat{flex:1;padding:12px;background:var(--glass);border-radius:10px;text-align:center}
+    .stat b{display:block;font-size:18px}
+
+    /* Sections */
+    section{padding:36px 0;border-top:1px solid rgba(123,103,81,0.1)}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .list{line-height:1.6;color:var(--muted)}
+
+    footer{padding:28px 0;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .grid-3{grid-template-columns:1fr}
+      nav{display:none}
+    }
+
+    /* small niceties */
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.1);font-weight:700}
+    .socials{display:flex;gap:10px}
+    .socials a{padding:8px;border-radius:8px;background:rgba(255,255,255,0.05)}
+    .roadmap-item{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.05), transparent);}
+
+    .small{font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Logo am Anfang -->
+    <div style="text-align:center; margin:20px 0;">
+      <img src="logo.png" alt="Fork&Flight Logo" style="width:100px; height:auto;">
+    </div>
+
+    <header>
+      <div class="brand">
+        <div class="logo">FAF</div>
+        <div>
+          <h1>Fork&amp;Flight <span class="ticker">FAF</span></h1>
+          <div class="small">Grab your fork. Catch a flight. Pay with taste.</div>
+        </div>
+      </div>
+
+      <nav>
+        <a class="ghost" href="#about">About</a>
+        <a class="ghost" href="#how">How to buy</a>
+        <a class="ghost" href="#roadmap">Roadmap</a>
+        <a class="btn" href="https://pump.fun" target="_blank" rel="noopener">Buy on Pump.fun</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h2>Fork&Flight — The tastiest journey in crypto</h2>
+          <p>Grab your fork, catch a flight, and enjoy a journey through taste & places. The first coin designed to be used in restaurants. Join the movement.</p>
+
+          <div style="display:flex;gap:12px;align-items:center">
+            <a class="btn" href="https://pump.fun" target="_blank" rel="noopener">Buy FAF</a>
+            <a class="ghost" href="#how">How to buy</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <small class="small">Ticker</small>
+              <b>FAF</b>
+            </div>
+            <div class="stat">
+              <small class="small">Network</small>
+              <b>Solana</b>
+            </div>
+            <div class="stat">
+              <small class="small">Goal</small>
+              <b>Restaurant adoption</b>
+            </div>
+          </div>
+        </div>
+
+        <aside class="card">
+          <h3 style="margin-top:0">Fork & Flight — Quick Pitch</h3>
+          <p class="small">A memecoin with real utility: restaurant payments, travel perks, and community food events. We focus on partnerships with eateries to pilot in-person payments.</p>
+
+          <div style="margin-top:14px">
+            <div class="small"><strong>Launch:</strong> Community mint & listing</div>
+            <div class="small"><strong>Vision:</strong> First coin people actually use in restaurants</div>
+          </div>
+
+          <div style="margin-top:14px;display:flex;gap:8px;align-items:center">
+            <a class="btn" href="#roadmap">Roadmap</a>
+            <a class="ghost" href="#community">Join community</a>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about">
+        <div class="card">
+          <h3>About Fork&Flight</h3>
+          <p class="list">Fork&Flight (FAF) blends the culture of food and travel. Our mission: build a community that loves tasting new places and paying with a coin that celebrates that spirit.</p>
+        </div>
+      </section>
+
+      <section id="how">
+        <div class="grid-3">
+          <div class="card">
+            <h4>How to buy</h4>
+            <ol class="list">
+              <li>Install a Solana wallet (Phantom, Solflare).</li>
+              <li>Buy SOL on an exchange and transfer to your wallet.</li>
+              <li>Go to <a href="https://pump.fun" target="_blank" rel="noopener">Pump.fun</a> and swap for <strong>FAF</strong>.</li>
+            </ol>
+          </div>
+
+          <div class="card">
+            <h4>Utility</h4>
+            <ul class="list">
+              <li>Pay in partnered restaurants.</li>
+              <li>Community food & travel events.</li>
+              <li>Exclusive deals for holders.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h4>Security</h4>
+            <p class="list">Always verify links and contracts. We recommend keeping small test amounts when trying new tokens and using trusted wallets.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="roadmap">
+        <h3>Roadmap (short)</h3>
+        <div style="display:grid;gap:12px;margin-top:12px">
+          <div class="roadmap-item">
+            <strong>Phase 1 — Launch</strong>
+            <div class="small">Token launch, community building, social growth.</div>
+          </div>
+          <div class="roadmap-item">
+            <strong>Phase 2 — Pilots</strong>
+            <div class="small">Restaurant pilot programs, local events, early partner integrations.</div>
+          </div>
+          <div class="roadmap-item">
+            <strong>Phase 3 — Scale</strong>
+            <div class="small">Wider acceptance, merchant tooling, global campaigns.</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="realisticGame" style="padding:36px 0;">
+  <div class="card" style="text-align:center; position:relative; height:300px; overflow:hidden;">
+    <h3>Fork & Flight – Restaurant Simulation</h3>
+    <p class="small">Erlebe den Ablauf: Bestellung, Bezahlung mit FAF-Coin und Genuss!</p>
+
+    <div id="restaurantArea" style="position:relative; width:100%; height:200px; border:2px solid var(--accent); border-radius:14px; background:linear-gradient(to top,#f5f0e6 0%,#e0d4c0 100%); margin:20px 0;">
+      <div id="person" style="position:absolute; left:10px; bottom:10px; font-size:32px;">🧑</div>
+      <div id="coin" style="position:absolute; left:10px; bottom:50px; font-size:28px; display:none;">🪙</div>
+      <div id="restaurant" style="position:absolute; right:20px; top:20px; font-size:48px;">🍽️</div>
+      <div id="plate" style="position:absolute; right:50px; top:60px; font-size:36px; display:none;">🥘</div>
+    </div>
+
+    <div id="status" class="small">Klicke auf den Menschen, um die Bestellung zu starten.</div>
+  </div>
+</section>
+
+<script>
+// Sounds
+const stepSound = new Audio('https://freesound.org/data/previews/66/66717_931655-lq.mp3'); // Schritte / Coin Wurf
+const coinSound = new Audio('https://freesound.org/data/previews/66/66717_931655-lq.mp3'); // Coin
+const successSound = new Audio('https://freesound.org/data/previews/109/109662_945474-lq.mp3'); // Erfolg
+const eatSound = new Audio('https://freesound.org/data/previews/198/198841_2859970-lq.mp3'); // Essen
+
+const person = document.getElementById('person');
+const coin = document.getElementById('coin');
+const restaurant = document.getElementById('restaurant');
+const plate = document.getElementById('plate');
+const status = document.getElementById('status');
+
+async function playGame() {
+  status.textContent = "🧑 Mensch betritt das Restaurant...";
+  
+  // Schritt 1: Mensch läuft zum Restaurant
+  stepSound.play();
+  await move(person, 10, person.offsetTop, restaurant.offsetLeft - 40, person.offsetTop, 50);
+
+  status.textContent = "🧑 Mensch bestellt das Essen...";
+  await sleep(1000);
+
+  // Schritt 2: Coin erscheint, Mensch zahlt
+  coin.style.display = 'block';
+  status.textContent = "🪙 Mensch bezahlt mit FAF-Coin...";
+  coinSound.play();
+  await move(coin, coin.offsetLeft, coin.offsetTop, restaurant.offsetLeft + 10, restaurant.offsetTop + 40, 50);
+  coin.style.display = 'none';
+  successSound.play();
+
+  status.textContent = "✅ Zahlung erfolgreich!";
+  await sleep(1000);
+
+  // Schritt 3: Teller mit Essen erscheint
+  plate.style.display = 'block';
+  status.textContent = "🍽️ Essen wird serviert...";
+  await sleep(1000);
+
+  // Schritt 4: Mensch isst
+  status.textContent = "😋 Mensch genießt das Essen!";
+  eatSound.play();
+  await animateEat(person, 3);
+
+  status.textContent = "🎉 Mahlzeit abgeschlossen! Das Spiel startet bald neu...";
+  await sleep(2000);
+
+  // Reset Spiel
+  resetGame();
+}
+
+function resetGame() {
+  person.style.left = '10px';
+  person.style.top = '10px';
+  coin.style.display = 'none';
+  coin.style.left = '10px';
+  coin.style.bottom = '50px';
+  plate.style.display = 'none';
+  status.textContent = "Klicke auf den Menschen, um die Bestellung zu starten.";
+}
+
+person.addEventListener('click', playGame);
+
+// Hilfsfunktionen
+function sleep(ms){ return new Promise(resolve => setTimeout(resolve, ms)); }
+
+function move(element, startX, startY, endX, endY, steps){
+  return new Promise(resolve => {
+    let progress = 0;
+    const interval = setInterval(() => {
+      progress++;
+      const t = progress/steps;
+      element.style.left = startX + (endX-startX)*t + 'px';
+      element.style.top = startY + (endY-startY)*t + 'px';
+      if(progress>=steps){
+        clearInterval(interval);
+        resolve();
+      }
+    }, 15);
+  });
+}
+
+async function animateEat(person, times){
+  for(let i=0;i<times;i++){
+    person.textContent = "🧑‍🍳"; // animiertes Essen
+    await sleep(300);
+    person.textContent = "🧑";
+    await sleep(300);
+  }
+}
+</script>
+
+
+      <section id="community">
+        <div class="card" style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
+          <div>
+            <h4>Join the community</h4>
+            <p class="small">Stay updated: Twitter, Tiktok & Discord. Help us make FAF payment-ready in restaurants near you.</p>
+          </div>
+          <div style="display:flex;gap:8px;align-items:center">
+            <div class="socials">
+              <a href="#" aria-label="Twitter">Twitter</a>
+              <a href="#" aria-label="Tiktok">Tiktok</a>
+              <a href="#" aria-label="Discord">Discord</a>
+            </div>
+            <a class="btn" href="#">Subscribe</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>© Fork&amp;Flight • FAF</div>
+      <div style="display:flex;gap:12px;align-items:center">
+        <div class="small">Made with 🍽️✈️</div>
+        <div class="small">Version 1.0</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', function(e){
+        e.preventDefault();
+        const t = document.querySelector(this.getAttribute('href'));
+        if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
+      })
+    })
+  </script>
+</body>
+</html>
